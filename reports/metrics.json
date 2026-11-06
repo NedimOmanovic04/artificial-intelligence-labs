@@ -1,0 +1,110 @@
+{
+  "dataset": "sklearn.datasets.load_digits (bundled, 8x8 images)",
+  "seed": 42,
+  "train_samples": 1437,
+  "test_samples": 360,
+  "selection": "3-fold stratified CV on training data only; macro F1",
+  "best_params": {
+    "mlpclassifier__alpha": 0.01
+  },
+  "best_cv_macro_f1": 0.9296462085578403,
+  "test_accuracy": 0.9527777777777777,
+  "test_macro_f1": 0.9525901593212007,
+  "dummy_test_accuracy": 0.1,
+  "classification_report": {
+    "0": {
+      "precision": 1.0,
+      "recall": 0.9444444444444444,
+      "f1-score": 0.9714285714285714,
+      "support": 36.0
+    },
+    "1": {
+      "precision": 0.8974358974358975,
+      "recall": 0.9722222222222222,
+      "f1-score": 0.9333333333333333,
+      "support": 36.0
+    },
+    "2": {
+      "precision": 0.9714285714285714,
+      "recall": 0.9714285714285714,
+      "f1-score": 0.9714285714285714,
+      "support": 35.0
+    },
+    "3": {
+      "precision": 0.9473684210526315,
+      "recall": 0.972972972972973,
+      "f1-score": 0.96,
+      "support": 37.0
+    },
+    "4": {
+      "precision": 0.8974358974358975,
+      "recall": 0.9722222222222222,
+      "f1-score": 0.9333333333333333,
+      "support": 36.0
+    },
+    "5": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 37.0
+    },
+    "6": {
+      "precision": 0.9714285714285714,
+      "recall": 0.9444444444444444,
+      "f1-score": 0.9577464788732394,
+      "support": 36.0
+    },
+    "7": {
+      "precision": 0.9459459459459459,
+      "recall": 0.9722222222222222,
+      "f1-score": 0.958904109589041,
+      "support": 36.0
+    },
+    "8": {
+      "precision": 0.9117647058823529,
+      "recall": 0.8857142857142857,
+      "f1-score": 0.8985507246376812,
+      "support": 35.0
+    },
+    "9": {
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.9411764705882353,
+      "support": 36.0
+    },
+    "accuracy": 0.9527777777777777,
+    "macro avg": {
+      "precision": 0.9542808010609868,
+      "recall": 0.9524560274560274,
+      "f1-score": 0.9525901593212007,
+      "support": 360.0
+    },
+    "weighted avg": {
+      "precision": 0.9544590653491583,
+      "recall": 0.9527777777777777,
+      "f1-score": 0.9528402168321275,
+      "support": 360.0
+    }
+  },
+  "cv_candidates": [
+    {
+      "params": {
+        "mlpclassifier__alpha": 0.001
+      },
+      "mean_macro_f1": 0.9289398625515526,
+      "std_macro_f1": 0.008069935436022597
+    },
+    {
+      "params": {
+        "mlpclassifier__alpha": 0.01
+      },
+      "mean_macro_f1": 0.9296462085578403,
+      "std_macro_f1": 0.007093242371839499
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.1.3",
+    "scikit-learn": "1.5.2"
+  }
+}
